@@ -135,7 +135,7 @@ main{
     text-align: start;
 }
 
-@media screen and (min-width:500px){
+@media screen and (max-width:500px){
     .seccion_prin_inter_moneda{
         width: 100%;
         height: 10vh;
