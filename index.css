@@ -48,6 +48,9 @@ Así se va a ver en celular      */
         z-index: -1;
     }
     
+    .py-0{
+        position: relative;
+    }
     .container .figure-señor .tittle-Init{
         background-color: #f5f504;
         width: 90%;
@@ -62,15 +65,15 @@ Así se va a ver en celular      */
     .container .info-IMG1{
         position: absolute;
         left: 10%;
-        bottom: -18%;
+        bottom: 10%;
     }
     .container .context-prim{
         width: 40%;
-        height: 20%;
+        max-height: 20vh;
         overflow: scroll;
         position: absolute;
         right: 0;
-        top: 45%;
+        top: 0;
         margin: 12px;
         border-radius: 5px;
         background-color: rgba(33, 37, 41, 0.75);
