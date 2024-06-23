@@ -1,7 +1,7 @@
 
 /* 
 Así se va a ver en celular      */
-@media (min-width: 576px) {
+@media (max-width: 576px) {
     header{
         z-index: 20;
         min-height: 20px;
@@ -66,11 +66,11 @@ Así se va a ver en celular      */
     }
     .container .context-prim{
         width: 40%;
-        height: 30%;
+        height: 20%;
         overflow: scroll;
         position: absolute;
         right: 0;
-        top: 85%;
+        top: 45%;
         margin: 12px;
         border-radius: 5px;
         background-color: rgba(33, 37, 41, 0.75);
