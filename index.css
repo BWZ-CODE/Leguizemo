@@ -1,20 +1,94 @@
-:root {
-    --amarilloOsc:#664300;
-    --amarilloMedioOsc: #a87b05;
-    --amarillo: #F5F504;
-    --piel: #f9db5c;
-    --blanco: #ffff94;
-    --sm: 14px;
-    --md: 16px;
-    --lg: 18px;
-  }
-@font-face{
-    font-family: edosz;
-    src: url(edo_sz/edosz.ttf);
-}
-*{
-    margin: 0;
-    font-family: edosz;
+
+/* 
+Así se va a ver en celular      */
+@media (max-width: 576px) {
+    header{
+        z-index: 20;
+        min-height: 20px;
+    }
+    
+
+   
+
+    .h1{
+        font-size: 0.8em !important;
+    }
+
+    .container .contLeft, .contRight {
+        font-size: 1.4em;
+    }
+    .figure-señor, .p-0{
+        position:relative;
+        width: 100%;
+        max-height: 300px;
+        /* top: -10%; */
+        
+    }
+
+    .señor-img{
+        position: relative;
+        max-height: 300px;
+        width: 100%;
+        z-index: -1;
+       
+        
+        
+    }
+
+    .figure2{
+        position: relative;
+       
+    }
+    
+    .figure-context{
+        width: 100%;
+        object-fit:contain;
+        position: relative;
+       
+        z-index: -1;
+    }
+    
+    .container .figure-señor .tittle-Init{
+        background-color: #f5f504;
+        width: 90%;
+        position:absolute;
+        bottom: 10%;
+        right: 0;
+        text-align: end;
+        padding: 10px;
+        font-size: 0.8;
+    }
+
+    .container .info-IMG1{
+        position: absolute;
+        left: 10%;
+        bottom: -18%;
+    }
+    .container .context-prim{
+        width: 40%;
+        height: 30%;
+        overflow: scroll;
+        position: absolute;
+        right: 0;
+        top: 85%;
+        margin: 12px;
+        border-radius: 5px;
+        background-color: rgba(33, 37, 41, 0.75);
+    }
+    .texto-proposito{
+        text-align: center;
+        position: absolute;
+        margin-top: 20px;
+        
+    }
+
+} 
+
+
+/* 
+Así se va a ver en pc */
+header{
+    background-color: black;
 }
 
 html{
@@ -24,169 +98,23 @@ html{
     display: none;
 }
 
+@font-face {
+    font-family: edoz;
+    src: url(./edo_sz/edosz.ttf);
+}
 
-nav{
-    position: relative;
+.contLeft{
     display: flex;
-    /* flex-direction: column; */
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 70px;
-    background:black;
+    flex-direction: column;
 }
 
-
-.cabecera_izquierda{
-    max-width: 450px;
-    min-width: 200px;
-    text-align: start;
-    padding-left: 15px;
-    font-size: 1.2rem;
-        
-}
-
-.cabecera_izquierda h1:nth-child(1){
-    color: var(--amarillo);
-}
-.cabecera_izquierda h1:nth-child(2){
-    color: #fff;
-}
-
-.cabecera_derecha{
-    max-width: 900px;
-    color: #fff;
-    margin-left: 200px;
-    padding-right: 15px;
-}
-
-.cabecera_derecha--titulo{
-    font-size: 25px;
-    font-weight: bold;
-    line-height: 2.6rem;
-    text-align: end;
-    
-}
-@media screen and (max-width:375px){
-    nav{
-        position: relative;
-        display: flex;
-        /* flex-direction: column; */
-        justify-content: space-between;
-
-    }
-
-    .cabecera_izquierda{
-        font-size: 0.8rem;
-    }
-
-   
-    .cabecera_derecha{
-        margin-left: 0;
-        color: #fff;
-        padding-right: 15px;
-    }
-
-    .cabecera_derecha--titulo{
-        font-size: 0.9rem;
-    }
-}
-
-/* 
-////////////////////////////////////////////// */
-main{
-    width: 100%;
-    height: auto;
-    background-color: var(--off-white);
-}
-
-.seccion_prin_inter_moneda{
-    width: 100%;
-    height: 70vh;
-    padding-top:80px;
-    padding-bottom: 30px;
-    text-align: center;
-    position: relative;
-    background-image: url(./pictures/señor\ byn2.jpg);
-    background-repeat: no-repeat;
-    background-size:auto;
-    background-position: center;
-}
-
-
-.seccion_prin_inter_moneda--title{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    
-    margin: 0 auto;
+.container{
+    font-family: edoz;
+    display: flex;
     justify-content: center;
-    
-    border-radius: 15px;
 }
 
-.seccion_prin_inter_moneda--title h2{
-    margin-bottom: 30px;
-    font-size: 1.8rem;
-    font-weight: bold;
-    line-height: 2.6rem;
-    color: #000000;
-    background-color: var(--amarillo);
-    text-align: start;
-}
 
-@media screen and (max-width:500px){
-    .seccion_prin_inter_moneda{
-        width: 100%;
-        height: 10vh;
-        background-size:cover;
-        background-position: center;
-    }
-    .seccion_prin_inter_moneda--title{
-        position: absolute;
-        bottom: 0;
-        right: 0px;
-        justify-content: end;
-        padding: 0 0 15px 15px;
-
-    }
-    .seccion_prin_inter_moneda--title h2{
-        margin-bottom: 0;
-        font-size: 0.8rem;
-        font-weight: normal;
-        line-height: 1rem;
-        color: #000000;
-        background-color: var(--amarillo);
-        text-align: end;
-        border-radius: 3px;
-        padding: 10px;
-    }
-    .mitad{
-        width: 100%;
-        position: relative;
-    }
-    .mitad figure{
-        margin-top: 5px;
-        height: 200px;
-    }
-    .mitad figure img{
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-    }
-    .mitad .contexto{
-        background-color:#3a3a3a ;
-        height: 120px;
-    }
-    .mitad .contexto h2{
-        color: var(--amarillo);
-        padding: 5px;
-    }
-    .mitad .contexto p{
-        font-size: 0.5rem;
-        color: #fff;
-        padding: 5px;
-    }
-
-
+.h1{
+    font-size: 1.4em;
 }
