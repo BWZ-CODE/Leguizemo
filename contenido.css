@@ -190,6 +190,73 @@ html{
         background-size: cover;
     }
 
+    .card-post{
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        z-index: 200;
+    }
+    .card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9{
+        border: solid black;
+        background-color: #fff;
+        border-radius: 15px;
+    }
 
+
+    .card-post .cabecera{
+        display: flex;
+        align-items:center;
+        justify-content: space-around;
+        height:5vh;
+        margin: 5px;
+    }
+    .card-post .cabecera p{
+        margin: 0;
+        width: 70%;
+        background-color: #f5f504;
+        text-align: center;
+    }
+
+
+    .card-post .cabecera img{
+        width: 50px;
+        margin-right: 10px;
+    }
+    .imagen-post{
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagen-post .imagen-de-post{
+        width: 250px;
+    }
+    .card-post .cards-info .container .row .col{
+        width: 50%;
+        height: 10vh;
+        padding: 0;
+        color: black;
+    }
+     .card-post .cards-info .container .row .col p{ 
+        font-size: 0.8em;
+    } 
+
+
+    .card-post .cards-info img{
+        width: 50px;
+    }
+
+    .inactive{
+        display: none;
+    }
+    .blur{
+        opacity: 0.5;
+        transition: all 0.5s;
+    }
 
 }
