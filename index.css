@@ -102,7 +102,7 @@ Así se va a ver en celular     ////////////////////////////////////////////////
     }
     .container .context-prim{
         width: 40%;
-        max-height: 20vh;
+        height: 20vh;
         overflow: scroll;
         position: absolute;
         right: 0;
