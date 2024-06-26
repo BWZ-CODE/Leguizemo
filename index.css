@@ -92,7 +92,7 @@ Así se va a ver en celular     ////////////////////////////////////////////////
         right: 0;
         text-align: end;
         padding: 10px;
-        font-size: 0.8;
+        font-size: 5.8;
     }
 
     .container .info-IMG1{
@@ -177,7 +177,8 @@ Así se va a ver en celular     ////////////////////////////////////////////////
 
 /* 
 Así se va a ver en iPad /////////////////////////////////////////////////////////*/
-@media (max-width: 768px) {
+
+@media (min-width: 577px) {
     header{
         z-index: 20;
         min-height: 20px;
@@ -324,4 +325,3 @@ Así se va a ver en iPad ///////////////////////////////////////////////////////
     }
 
 } 
-
