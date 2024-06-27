@@ -969,7 +969,7 @@ html{
         position: absolute;
         top: 100%;
         left: 25%;
-        max-width: 50%;
+        max-width: 60%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1012,9 +1012,13 @@ html{
     .imagen-post .imagen-de-post{
         width: 250px;
     }
+    .card-post .cards-info .container .row{
+        justify-content: center;
+        gap: 15px;
+    }
     .card-post .cards-info .container .row .col{
-        width: 50%;
-        height: 25vh;
+        width: 40%;
+        height: 35vh;
         padding: 0;
         color: black;
     }
