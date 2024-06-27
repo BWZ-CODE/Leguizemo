@@ -967,7 +967,7 @@ html{
 
     .card-post{
         position: absolute;
-        top: 90%;
+        top: 100%;
         left: 25%;
         max-width: 50%;
         display: flex;
