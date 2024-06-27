@@ -478,3 +478,156 @@ Así se va a ver en iPad////////////////////////////////////////////////// */
     }
 
 } 
+
+/* 
+Celular grande volteado///////////////////////////// */
+@media (min-width: 843px) {
+    header{
+        z-index: 20;
+        min-height: 20px;
+    }
+    
+
+   
+
+    .h1{
+        font-size: 0.8em !important;
+    }
+
+    .container .contLeft, .contRight {
+        font-size: 2rem;
+    }
+    .figure-señor, .p-0{
+        position:relative;
+        width: 100%;
+        max-height: 400px;
+        /* top: -10%; */
+        
+    }
+
+    .señor-img{
+        position: relative;
+        max-height: 400px;
+        width: 100%;
+        z-index: -1;
+       
+        
+        
+    }
+
+    .col-sm-6{
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .figure2{
+        position: relative;
+       
+    }
+    
+    .figure-context{
+        width: 100%;
+        object-fit:contain;
+        position: relative;
+        z-index: -1;
+    }
+    
+    .py-0{
+        position: relative;
+        
+    }
+    .container .figure-señor .tittle-Init{
+        background-color: #f5f504;
+        width: 85%;
+        position:absolute;
+        bottom: 10%;
+        right: 0;
+        text-align: end;
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+
+    .container .info-IMG1{
+        position: absolute;
+        left: 10%;
+        bottom: 10%;
+    }
+    .container .context-prim{
+        width: 40%;
+        max-height: 70vh;
+        overflow: scroll;
+        position: absolute;
+        right: 0;
+        top: 5%;
+        margin: 12px;
+        border-radius: 5px;
+        background-color: rgba(33, 37, 41, 0.75);
+    }
+
+    .container .context-prim h2{
+        font-size: 2.3rem
+    }
+    .container .context-prim p{
+        font-size: 1.3rem
+    }
+
+    .parte-final{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+
+    }
+
+    .texto-proposito{
+        text-align: center;
+        position: relative;
+        margin-top: 20px;
+        width: 80%;
+        
+    }
+
+    .texto-proposito-info h2{
+        font-weight: bold;
+        font-size: 3rem;
+    }
+
+    .texto-proposito-info{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.3em;
+    }
+
+    .btn-primary{
+        position: relative;
+        background-color: #f5f504;
+        border: none;
+        width: 150px;
+        height: 60px;
+        
+    }
+    .btn-primary a{
+        color:#000;
+        font-size: 1.2rem;
+        text-decoration: none;
+
+    }
+    .footer-first{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+        min-width: 100%;
+        height: 5vh;
+        background-color: #f5f504;
+    } 
+    .footer-first p{
+        text-align: center;
+        align-self: center;
+        margin: 0;
+    }
+
+} 

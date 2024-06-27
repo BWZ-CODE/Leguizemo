@@ -258,7 +258,7 @@
 
 ////////////Index
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     header{
         z-index: 20;
         min-height: 20px;

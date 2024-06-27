@@ -198,7 +198,7 @@ html{
 
     .card-post{
         position: absolute;
-        top: 25%;
+        top: 35%;
         left: 10%;
         max-width: 80%;
         display: flex;
@@ -452,7 +452,7 @@ html{
 
     .card-post{
         position: absolute;
-        top: 50%;
+        top: 95%;
         left: 25%;
         max-width: 50%;
         display: flex;
@@ -533,7 +533,9 @@ html{
 
 }
 /* 
-//////////////////iPad/////////////////////////////////////////////// */
+
+/* 
+//////////////////iPad mini /////////////////////////////////////////////// */
 @media (min-width: 768px) {
     header{
         z-index: 20;
@@ -647,20 +649,20 @@ html{
 }
     #next, #prev{
     position: absolute;
-    top: 0%;
-    width:30%;
-    height: 100%;
+    top: 20%;
+    width:20%;
+    height: 60%;
     color: #fff;
     background-color: transparent;
     border: none;
     font-family: monospace;
     font-weight: bold;
-    left: 0px;
+    left: 5%;
     z-index: 100;
 }
     #next {
     left: unset;
-    right: 0px;
+    right:5%;
 }
 
 
@@ -756,6 +758,263 @@ html{
     .card-post .cards-info .container .row .col{
         width: 50%;
         height: 10vh;
+        padding: 0;
+        color: black;
+    }
+     .card-post .cards-info .container .row .col p{ 
+        font-size: 1em;
+    } 
+
+
+    .card-post .cards-info img{
+        width: 50px;
+    }
+
+    .inactive{
+        display: none;
+    }
+    .blur{
+        opacity: 0.5;
+        transition: all 0.5s;
+    }
+    .card10 .imagen-post{
+        display: flex;
+        padding: 5px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .card10 .imagen-post .imagen-de-post{
+        width: 300px;
+        height: auto;
+    }
+
+}
+
+/* Celular grande volteado///////////////////////////////////////////////////  */ 
+@media (min-width: 843px) {
+    header{
+        z-index: 20;
+        min-height: 20px;
+    }
+    
+
+   
+
+    .h1{
+        font-size: 0.8em !important;
+    }
+
+    .container .contLeft, .contRight {
+        font-size: 2rem;
+    }
+
+    .col-sm-6{
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .figure2{
+        position: relative;
+       
+    }
+    
+    .figure-context{
+        width: 100%;
+        object-fit:contain;
+        position: relative;    
+        z-index: -1;
+    }
+    
+    .py-2{
+        position: relative;
+        
+    }
+    .container .figure-señor .tittle-Init{
+        background-color: #f5f504;
+        width: 90%;
+        position:absolute;
+        bottom: 10%;
+        right: 0;
+        text-align: end;
+        padding: 10px;
+        font-size: 0.8;
+    }
+
+    .container .info-IMG1{
+        position: absolute;
+        left: 10%;
+        bottom: 15%;
+    }
+    .container .context-prim{
+        width: 40%;
+        max-height: 70vh;
+        overflow: scroll;
+        position: absolute;
+        right: 0;
+        top: 10%;
+        margin: 12px;
+        border-radius: 5px;
+        background-color: rgba(33, 37, 41, 0.75);
+    }
+    .container .context-prim h2{
+        font-size: 2.3rem;
+    }
+    .container .context-prim p{
+        font-size: 1.3rem;
+    }
+    .post-instagram{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .post-instagram .postTittle h1, .estadisticas-cool .estadTittle h1{
+        position: relative;
+        left: 0;
+        width: 80%;
+        background-color: #f5f504;
+        text-align: center;
+        padding: 5px;
+    }
+
+     /*Carrusel inicio */
+    .slider{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    
+}
+
+.item{
+    transition: all 0.4s;
+    z-index: 100;
+}
+    .item img{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    background-color: #fff;
+    border-radius: 10px;
+    /* padding: 20px; */
+    left: calc(50% - 110px);
+    top: 0;
+    z-index: 10;
+}
+    #next, #prev{
+    position: absolute;
+    top: 20%;
+    width:20%;
+    height: 60%;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    left: 5%;
+    z-index: 100;
+}
+    #next {
+    left: unset;
+    right:5%;
+}
+
+
+/* 
+     Carrusel final */
+    .estadisticas-cool .container{
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row-cols-3{
+        gap: 5px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .col{
+        width: 180px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #f5f504;
+        font-size: 1.5rem;
+    }
+
+    
+
+    .col1{
+        background-image: url(./pictures/one\ byn.jpg);
+        background-size: cover;
+    }
+    .col2{
+        background-image: url(./pictures/two\ byn.jpg);
+        background-size: cover;
+    }
+    .col3{
+        background-image: url(./pictures/tres\ byn.jpg);
+        background-size: cover;
+    }
+
+    .card-post{
+        position: absolute;
+        top: 90%;
+        left: 25%;
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        z-index: 200;
+    }
+    .card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10,.card11,.card12{
+        /* border: solid black; */
+        background-color: #fff;
+        border-radius: 15px;
+    }
+
+
+    .card-post .cabecera{
+        display: flex;
+        align-items:center;
+        justify-content: space-around;
+        height:10vh;
+        margin: 5px;
+    }
+    .card-post .cabecera p{
+        margin: 0;
+        width: 70%;
+        background-color: #f5f504;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+
+    .card-post .cabecera img{
+        width: 50px;
+        margin-right: 10px;
+    }
+    .imagen-post{
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagen-post .imagen-de-post{
+        width: 250px;
+    }
+    .card-post .cards-info .container .row .col{
+        width: 50%;
+        height: 25vh;
         padding: 0;
         color: black;
     }
