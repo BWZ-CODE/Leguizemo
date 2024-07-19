@@ -491,14 +491,14 @@ html{
     }
 
 
-    .card-post .cabecera{
+    .card-post .cabecera,.card-post2 .cabecera{
         display: flex;
         align-items:center;
         justify-content: space-around;
         height:10vh;
         margin: 5px;
     }
-    .card-post .cabecera p{
+    .card-post .cabecera p,.card-post2 .cabecera p{
         margin: 0;
         width: 70%;
         background-color: #f5f504;
@@ -506,7 +506,7 @@ html{
     }
 
 
-    .card-post .cabecera img{
+    .card-post .cabecera img,.card-post2 .cabecera img{
         width: 50px;
         margin-right: 10px;
     }
@@ -779,14 +779,14 @@ html{
     }
 
 
-    .card-post .cabecera{
+    .card-post .cabecera,.card-post2 .cabecera{
         display: flex;
         align-items:center;
         justify-content: space-around;
         height:5vh;
         margin: 5px;
     }
-    .card-post .cabecera p{
+    .card-post .cabecera p,.card-post2 .cabecera p{
         margin: 0;
         width: 70%;
         background-color: #f5f504;
@@ -795,7 +795,7 @@ html{
     }
 
 
-    .card-post .cabecera img{
+    .card-post .cabecera img,.card-post2 .cabecera img{
         width: 50px;
         margin-right: 10px;
     }
@@ -1066,14 +1066,14 @@ html{
     }
 
 
-    .card-post .cabecera{
+    .card-post .cabecera,.card-post2 .cabecera{
         display: flex;
         align-items:center;
         justify-content: space-around;
         height:10vh;
         margin: 5px;
     }
-    .card-post .cabecera p{
+    .card-post .cabecera p,.card-post2 .cabecera p{
         margin: 0;
         width: 70%;
         background-color: #f5f504;
@@ -1082,7 +1082,7 @@ html{
     }
 
 
-    .card-post .cabecera img{
+    .card-post .cabecera img,.card-post2 .cabecera img{
         width: 50px;
         margin-right: 10px;
     }
@@ -1357,14 +1357,14 @@ html{
     }
 
 
-    .card-post .cabecera{
+    .card-post .cabecera,.card-post2 .cabecera{
         display: flex;
         align-items:center;
         justify-content: space-around;
         height:10vh;
         margin: 5px;
     }
-    .card-post .cabecera p{
+    .card-post .cabecera p,.card-post2 .cabecera p{
         margin: 0;
         width: 70%;
         background-color: #f5f504;
@@ -1373,7 +1373,7 @@ html{
     }
 
 
-    .card-post .cabecera img{
+    .card-post .cabecera img,.card-post2 .cabecera img{
         width: 50px;
         margin-right: 10px;
     }
@@ -1648,14 +1648,14 @@ html{
     }
 
 
-    .card-post .cabecera{
+    .card-post .cabecera, .card-post2 .cabecera{
         display: flex;
         align-items:center;
         justify-content: space-around;
         height:10vh;
         margin: 5px;
     }
-    .card-post .cabecera p{
+    .card-post .cabecera p, .card-post2 .cabecera p{
         margin: 0;
         width: 70%;
         background-color: #f5f504;
@@ -1664,7 +1664,7 @@ html{
     }
 
 
-    .card-post .cabecera img{
+    .card-post .cabecera img, .card-post2 .cabecera img{
         width: 50px;
         margin-right: 10px;
     }
