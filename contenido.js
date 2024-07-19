@@ -189,3 +189,56 @@ function cerrarInfo9(){
     info9.classList.add("inactive")
     fondo9.classList.toggle("blur")
 }
+
+//////////////////////////////////////////////////////
+const img10 = document.querySelector(".col1");
+const info10 = document.querySelector(".card10");
+const fondo10 = document.querySelector(".fondo1")
+const close10 = document.querySelector(".flechita-atras10");
+
+img10.addEventListener("click",abrirInfo10)
+close10.addEventListener("click",cerrarInfo10)
+
+function abrirInfo10(){
+    info10.classList.toggle("inactive")
+    fondo10.classList.add("blur")
+}
+function cerrarInfo10(){
+    info10.classList.add("inactive")
+    fondo10.classList.toggle("blur")
+}
+
+//////////////////////////////////////////////////////////
+const img11 = document.querySelector(".col2");
+const info11 = document.querySelector(".card11");
+const fondo11 = document.querySelector(".fondo1")
+const close11 = document.querySelector(".flechita-atras11");
+
+img11.addEventListener("click",abrirInfo11)
+close11.addEventListener("click",cerrarInfo11)
+
+function abrirInfo11(){
+    info11.classList.toggle("inactive")
+    fondo11.classList.add("blur")
+}
+function cerrarInfo11(){
+    info11.classList.add("inactive")
+    fondo11.classList.toggle("blur")
+}
+//////////////////////////////////////////////////////////
+const img12 = document.querySelector(".col3");
+const info12 = document.querySelector(".card12");
+const fondo12 = document.querySelector(".fondo1")
+const close12 = document.querySelector(".flechita-atras12");
+
+img12.addEventListener("click",abrirInfo12)
+close12.addEventListener("click",cerrarInfo12)
+
+function abrirInfo12(){
+    info12.classList.toggle("inactive")
+    fondo12.classList.add("blur")
+}
+function cerrarInfo12(){
+    info12.classList.add("inactive")
+    fondo12.classList.toggle("blur")
+}

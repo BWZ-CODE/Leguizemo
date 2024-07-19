@@ -940,7 +940,7 @@ iPad Air horizontal///////////////////////////// */
 
 /* 
 iPad pro vertical///////////////////////////// */
-@media (min-width: 1024px) {
+@media (min-width: 1023px) {
     header{
         z-index: 20;
         min-height: 20px;
