@@ -248,7 +248,7 @@ html{
     }
     .card-post .cards-info .container .row .col{
         width: 50%;
-        height: 10vh;
+        height: 11vh;
         padding: 0;
         color: black;
     }
@@ -271,7 +271,7 @@ html{
 
     .card-post2{
         position: absolute;
-        top: 55%;
+        top: 40%;
         left: 10%;
         max-width: 80%;
         display: flex;
@@ -2037,4 +2037,5 @@ html{
     }
 
 }
+
 
