@@ -53,6 +53,11 @@ function cerrarInfo1(){
     fondo1.classList.toggle("blur")
 }
 
+
+
+
+
+
 //////////////////////////////////////////////////////////////////////
 const img2 = document.querySelector(".img2");
 const info2 = document.querySelector(".card2");
@@ -191,54 +196,142 @@ function cerrarInfo9(){
 }
 
 //////////////////////////////////////////////////////
-const img10 = document.querySelector(".col1");
-const info10 = document.querySelector(".card10");
-const fondo10 = document.querySelector(".fondo1")
-const close10 = document.querySelector(".flechita-atras10");
+// const img10 = document.querySelector(".col1");
+// const info10 = document.querySelector(".card10");
+// const fondo10 = document.querySelector(".fondo1")
+// const close10 = document.querySelector(".flechita-atras10");
 
-img10.addEventListener("click",abrirInfo10)
-close10.addEventListener("click",cerrarInfo10)
+// img10.addEventListener("click",abrirInfo10)
+// close10.addEventListener("click",cerrarInfo10)
 
-function abrirInfo10(){
-    info10.classList.toggle("inactive")
-    fondo10.classList.add("blur")
+// function abrirInfo10(){
+//     info10.classList.toggle("inactive")
+//     fondo10.classList.add("blur")
+    
+// }
+
+
+
+
+// function cerrarInfo10(){
+//     info10.classList.add("inactive")
+//     fondo10.classList.toggle("blur")
+// }
+
+
+
+
+// //////////////////////////////////////////////////////////
+// const img11 = document.querySelector(".col2");
+// const info11 = document.querySelector(".card11");
+// const fondo11 = document.querySelector(".fondo1")
+// const close11 = document.querySelector(".flechita-atras11");
+
+// img11.addEventListener("click",abrirInfo11)
+// close11.addEventListener("click",cerrarInfo11)
+
+// function abrirInfo11(){
+//     info11.classList.toggle("inactive")
+//     fondo11.classList.add("blur")
+// }
+// function cerrarInfo11(){
+//     info11.classList.add("inactive")
+//     fondo11.classList.toggle("blur")
+// }
+// //////////////////////////////////////////////////////////
+// const img12 = document.querySelector(".col3");
+// const info12 = document.querySelector(".card12");
+// const fondo12 = document.querySelector(".fondo1")
+// const close12 = document.querySelector(".flechita-atras12");
+
+// img12.addEventListener("click",abrirInfo12)
+// close12.addEventListener("click",cerrarInfo12)
+
+// function abrirInfo12(){
+//     info12.classList.toggle("inactive")
+//     fondo12.classList.add("blur")
+// }
+// function cerrarInfo12(){
+//     info12.classList.add("inactive")
+//     fondo12.classList.toggle("blur")
+// }
+
+///////////////////////////////////////////////////////////////////
+
+const img10 = document.querySelector('.col1');
+const info10 = document.querySelector('.card10');
+const fondo10 = document.querySelector('.fondo1')
+const close10 = document.querySelector('.flechita-atras10');
+
+const img11 = document.querySelector('.col2');
+const info11 = document.querySelector('.card11');
+const fondo11 = document.querySelector('.fondo1')
+const close11 = document.querySelector('.flechita-atras11');
+
+const img12 = document.querySelector('.col3');
+const info12 = document.querySelector('.card12');
+const fondo12 = document.querySelector('.fondo1')
+const close12 = document.querySelector('.flechita-atras12');       
+
+
+img10.addEventListener('click', toggleSeguidores);
+close10.addEventListener('click', cerrarSeguidores);
+
+img11.addEventListener('click', togglePublicaciones);
+close11.addEventListener('click', cerrarpublicaciones);
+
+img12.addEventListener('click', toggleInteracciones);
+close12.addEventListener('click', cerrarinteracciones);
+
+function toggleSeguidores(){
+    const isPublicacionesClose = info11.classList.contains('inactive');
+    const isInteraccionesClose = info12.classList.contains('inactive');
+
+    if (!isPublicacionesClose){
+        info11.classList.add('inactive');
+    }
+    if (!isInteraccionesClose){
+        info12.classList.add('inactive');
+    }
+    
+    info10.classList.toggle('inactive');
 }
-function cerrarInfo10(){
-    info10.classList.add("inactive")
-    fondo10.classList.toggle("blur")
+
+function cerrarSeguidores(){
+    info10.classList.add('inactive');
 }
 
-//////////////////////////////////////////////////////////
-const img11 = document.querySelector(".col2");
-const info11 = document.querySelector(".card11");
-const fondo11 = document.querySelector(".fondo1")
-const close11 = document.querySelector(".flechita-atras11");
+function togglePublicaciones(){
+    const isSeguidoresClose = info10.classList.contains('inactive');
+    const isInteraccionesClose = info12.classList.contains('inactive');
 
-img11.addEventListener("click",abrirInfo11)
-close11.addEventListener("click",cerrarInfo11)
-
-function abrirInfo11(){
-    info11.classList.toggle("inactive")
-    fondo11.classList.add("blur")
+    if (!isSeguidoresClose){
+        info10.classList.add('inactive');
+    }
+    if (!isInteraccionesClose){
+        info12.classList.add('inactive');
+    }
+    
+    info11.classList.toggle('inactive');
 }
-function cerrarInfo11(){
-    info11.classList.add("inactive")
-    fondo11.classList.toggle("blur")
+function cerrarpublicaciones(){
+    info11.classList.add('inactive');
 }
-//////////////////////////////////////////////////////////
-const img12 = document.querySelector(".col3");
-const info12 = document.querySelector(".card12");
-const fondo12 = document.querySelector(".fondo1")
-const close12 = document.querySelector(".flechita-atras12");
 
-img12.addEventListener("click",abrirInfo12)
-close12.addEventListener("click",cerrarInfo12)
+function toggleInteracciones(){
+    const isSeguidoresClose = info10.classList.contains('inactive');
+    const isPublicacionesClose = info11.classList.contains('inactive');
 
-function abrirInfo12(){
-    info12.classList.toggle("inactive")
-    fondo12.classList.add("blur")
+    if (!isSeguidoresClose){
+        info10.classList.add('inactive');
+    }
+    if (!isPublicacionesClose){
+        info11.classList.add('inactive');
+    }
+    
+    info12.classList.toggle('inactive');
 }
-function cerrarInfo12(){
-    info12.classList.add("inactive")
-    fondo12.classList.toggle("blur")
+
+function cerrarinteracciones(){
+    info12.classList.add('inactive');
 }

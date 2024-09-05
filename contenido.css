@@ -1190,8 +1190,7 @@ html{
     }
 
     .figure2{
-        position: relative;
-       
+        position: relative;  
     }
     
     .figure-context{
@@ -1395,7 +1394,7 @@ html{
         padding: 0;
         color: black;
     }
-     .card-post .cards-info .container .row .col p{ 
+    .card-post .cards-info .container .row .col p{ 
         font-size: 1em;
     } 
 
@@ -1686,7 +1685,7 @@ html{
         padding: 0;
         color: black;
     }
-     .card-post .cards-info .container .row .col p{ 
+    .card-post .cards-info .container .row .col p{ 
         font-size: 0.7em;
     } 
 
