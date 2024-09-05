@@ -1425,7 +1425,7 @@ html{
 
     .card-post2{
         position: absolute;
-        top: 55%;
+        top: 50%;
         left: 10%;
         max-width: 80%;
         display: flex;
@@ -1437,7 +1437,8 @@ html{
     }
 
     .card10,.card11,.card12{
-        height: 400px;
+        height: 800px;
+        width: 500px;
         overflow: scroll;
     }
 
