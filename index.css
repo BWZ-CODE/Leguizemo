@@ -1168,7 +1168,7 @@ iPad pro vertical///////////////////////////// */
     }
     .container .context-prim{
         width: 30%;
-        max-height: 55vh;
+        max-height: 80%;
         overflow: scroll;
         position: absolute;
         right: 18%;
