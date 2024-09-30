@@ -34,6 +34,10 @@ html{
 }   
 
 
+.slider .item img{
+    cursor: pointer;
+}
+
 /* ////////////////celular/////////////////////////////// */
 @media (max-width: 576px) {
     header{
