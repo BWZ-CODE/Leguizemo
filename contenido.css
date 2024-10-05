@@ -2271,7 +2271,7 @@ html{
     .imagen-post a img:hover{
 
         transition: all 0.5s;
-        width: 335px;
+        transform: scale(1.02);
 
     }
     
@@ -2383,7 +2383,7 @@ html{
 
     .card-post2{
         position: absolute;
-        top: 120%;
+        top: 140%;
         left: 0%;
         max-width: 100%;
         display: flex;
@@ -2395,8 +2395,8 @@ html{
     }
 
     .card10,.card11,.card12{
-        height: 600px;
-        width: 500px;
+        height: 90vh;
+        width: 60%;
         overflow: scroll;
     }
 
