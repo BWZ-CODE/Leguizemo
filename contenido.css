@@ -8,6 +8,9 @@ html{
 ::-webkit-scrollbar{
     display: none;
 }
+.home{
+    background-image: linear-gradient(180deg, #000000 0%, #fff0 100%) !important;
+}
 
 @font-face {
     font-family: edoz;
@@ -265,8 +268,8 @@ html{
         display: none;
     }
     .blur{
-        opacity: 0.5;
-        transition: all 0.5s;
+        opacity: 0.9;
+        transition: all 0.2s;
     }
 
     .card-post2{
@@ -533,8 +536,8 @@ html{
         display: none;
     }
     .blur{
-        opacity: 0.5;
-        transition: all 0.5s;
+        opacity: 0.9;
+        transition: all 0.2s;
     }
     .card10 .imagen-post{
         display: flex;
@@ -822,7 +825,7 @@ html{
     }
     .blur{
         opacity: 0.5;
-        transition: all 0.5s;
+        transition: all 0.2s;
     }
     .card10 .imagen-post{
         display: flex;
@@ -1109,7 +1112,7 @@ html{
     }
     .blur{
         opacity: 0.5;
-        transition: all 0.5s;
+        transition: all 0.2s;
     }
     .card10 .imagen-post{
         display: flex;
@@ -1397,7 +1400,7 @@ html{
     }
     .blur{
         opacity: 0.5;
-        transition: all 0.5s;
+        transition: all 0.2s;
     }
     .card10 .imagen-post{
         display: flex;
@@ -1686,7 +1689,7 @@ html{
     }
     .blur{
         opacity: 0.5;
-        transition: all 0.5s;
+        transition: all 0.2s;
     }
     .card10 .imagen-post{
         display: flex;
@@ -1973,7 +1976,7 @@ html{
     }
     .blur{
         opacity: 0.5;
-        transition: all 0.5s;
+        transition: all 0.2s;
     }
     .card10 .imagen-post{
         display: flex;
@@ -2009,6 +2012,7 @@ html{
 
     .card-post2 .cabecera img{
         width: 80px;
+        cursor: pointer;
     }
 
     .card10Cont,.card11Cont,.card12Cont{
@@ -2100,17 +2104,13 @@ html{
         color: #f5f504; 
         padding: 5px;
         text-decoration: none;
-        transition: all 0.5s;
+        transition: all 0.2s;
         
     }
     .container .context-prim a:hover{
-        font-size: 2.6rem;
-        /* text-decoration: line-through;
-        text-decoration: underline; */
         color: #535308;
-        transition: all 0.5s;
+        transition: all 0.2s;
         background: #f5f504;
-        border-radius: 15px;
         
     } 
 
@@ -2144,11 +2144,11 @@ html{
         object-fit: cover;
         cursor: pointer;
         border-radius: 10px;
-        transition: all 0.5s;
+        transition: all 0.2s;
     }
     #item img:hover{
         transform: scale(1.02);
-        transition: all 0.5s;
+        transition: all 0.2s;
     }
     
     #slider .grupoArriba{
@@ -2185,7 +2185,7 @@ html{
     }
 
     .row-cols-3{
-        gap: 5px;
+        gap: 10px;
         width: 100%;
         justify-content: center;
         align-items: center;
@@ -2206,14 +2206,25 @@ html{
     .col1{
         background-image: url(./pictures/one\ byn.jpg);
         background-size: cover;
+        cursor: pointer;
+        transition: all 0.2s;
     }
     .col2{
         background-image: url(./pictures/two\ byn.jpg);
         background-size: cover;
+        cursor: pointer;
+        transition: all 0.2s;
     }
     .col3{
         background-image: url(./pictures/tres\ byn.jpg);
         background-size: cover;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+
+    .col1:hover,.col2:hover,.col3:hover{
+        transform: scale(1.02);
+        transition: all 0.2s;
     }
 
     .card-post{
@@ -2261,7 +2272,7 @@ html{
     }
     .imagen-post a img{
         border-radius: 20px;
-        transition: all 0.5s;
+        transition: all 0.2s;
     }
 
     .imagen-post .imagen-de-post {
@@ -2270,7 +2281,7 @@ html{
 
     .imagen-post a img:hover{
 
-        transition: all 0.5s;
+        transition: all 0.2s;
         transform: scale(1.02);
 
     }
@@ -2363,11 +2374,12 @@ html{
 
     .inactive{
         display: none;
-    }
+    }*/
     .blur{
-        opacity: 0.5;
-        transition: all 0.5s;
-    } */
+        opacity: 0.1;
+        transition: all 0.2s;
+        background-color: black;
+    } 
     .card10 .imagen-post{
         display: flex;
         padding: 5px;
@@ -2383,7 +2395,7 @@ html{
 
     .card-post2{
         position: absolute;
-        top: 140%;
+        top: 150%;
         left: 0%;
         max-width: 100%;
         display: flex;
@@ -2396,7 +2408,7 @@ html{
 
     .card10,.card11,.card12{
         height: 90vh;
-        width: 60%;
+        width: 70%;
         overflow: scroll;
     }
 
@@ -2418,4 +2430,25 @@ html{
 
 }
 
+/* 
+////////////////////////////Computador grande/////////////////////////// */
 
+@media (min-width:1600px){
+    .card-post2 {
+        top: 100%;
+    }
+    .card-post{
+        top:70%;
+    }
+    .card-post .infoIMG .cards-info .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin-left: 20px;
+        gap: 0;
+    }
+    
+    
+}
