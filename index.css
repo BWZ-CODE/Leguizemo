@@ -223,6 +223,9 @@ Así se va a ver en celular     ////////////////////////////////////////////////
     .infoPau ul li:nth-child(1){
         font-weight: bold;
     }
+    .infoPau ul a img{
+        width: 15px;
+    }
 
     .container .figure-señor{
         display: flex;
