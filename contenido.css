@@ -210,7 +210,7 @@ html{
     ///////////////////////////////////////////////// */
     .card-post{
         position: absolute;
-        top: 15%;
+        top: 10%;
         max-width: 100%;
         display: flex;
         flex-direction: column;
@@ -287,9 +287,11 @@ html{
     }
     #infoImpactante p{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        padding: 10px 10px;
+        padding: 30px 10px 0px 0px;
+        position: relative;
+        width: 100%;
         text-align: start;
-        
+        top: 10%;
     }
 
     
@@ -297,6 +299,9 @@ html{
     .infoPostIMG{
         padding: 20px;
         width: 100%;
+        position: relative;
+        top: 30px;
+        
     }
 
     /* ///////////////////////////////////////////////////// */
