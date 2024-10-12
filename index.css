@@ -1472,7 +1472,7 @@ iPad pro vertical///////////////////////////// */
     }
     .container .figure-señor .tittle-Init{
         background-color: #f5f504;
-        width: 90%;
+        
         height: 10%;
         position:absolute;
         top: 5%;   
@@ -1615,7 +1615,7 @@ iPad pro vertical///////////////////////////// */
 
 
     .container .figure-señor p{
-        width: 30%;
+        width: 35%;
         height: 70%;
         overflow: scroll;
         position: absolute;
