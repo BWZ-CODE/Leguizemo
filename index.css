@@ -196,7 +196,6 @@ Así se va a ver en celular     ////////////////////////////////////////////////
         margin: 20px;
         border: none;
         border-radius: 30px;
-        padding: 10px 0 0 0;
         line-height: 20px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         box-shadow: 0px -16px 10px -4px rgba(0, 0, 0, 0.3), 0px 10px 15px -3px #bdb7b71a;
@@ -216,6 +215,10 @@ Así se va a ver en celular     ////////////////////////////////////////////////
         
 
     }
+    .presentacionPau .infoPau{
+        padding: 10px 0 0 0;
+    }
+
     .infoPau ul{
         list-style: none;
         padding-left: 10px;
@@ -234,12 +237,13 @@ Así se va a ver en celular     ////////////////////////////////////////////////
 
 
     .container .figure-señor p{
-        width: 40%;
-        height: 20vh;
+        width: 50%;
+        height: 15vh;
         overflow: scroll;
         position: absolute;
         right: 0;
         top: 28%;
+        padding: 10px;
         margin: 12px;
         border-radius: 5px;
         background-color: rgba(33, 37, 41, 0.75);
