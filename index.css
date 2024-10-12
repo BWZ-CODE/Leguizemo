@@ -37,9 +37,7 @@ html{
 /* 
 Así se va a ver en celular     //////////////////////////////////////////////// */
 @media (max-width: 576px) {
-    .figure-caption-IMG1{
-        font-size: .5em;
-    }
+
 
 
     header{
@@ -105,9 +103,13 @@ Así se va a ver en celular     ////////////////////////////////////////////////
 
     .container .info-IMG1{
         position: absolute;
-        left: 10%;
+        left: 5%;
+        bottom: 5%;
+    }
+    #secondIMG{
         bottom: 10%;
     }
+
     .container .context-prim{
         width: 40%;
         height: 20vh;
@@ -118,6 +120,10 @@ Así se va a ver en celular     ////////////////////////////////////////////////
         margin: 12px;
         border-radius: 5px;
         background-color: rgba(33, 37, 41, 0.75);
+    }
+    .container .secondIMG{
+        position: absolute;
+        top: 100%;
     }
 
     .container .context-prim p{
