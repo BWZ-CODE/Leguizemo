@@ -2154,7 +2154,7 @@ html{
         padding: 15px;
         overflow: scroll;
         position: absolute;
-        right: 250px;
+        right: 19%;
         top: 10%;
         margin: 12px;
         border-radius: 5px;
@@ -2384,10 +2384,6 @@ html{
         margin-bottom: 5%;
         width: 400px;
     }
-    .card1{
-        width: 100%;
-    }
-
     #infoImpactante #larga{
         font-size: 0.8rem;
     }
