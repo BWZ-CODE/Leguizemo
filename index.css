@@ -1618,7 +1618,7 @@ iPad pro vertical///////////////////////////// */
         height: 10%;
         position:absolute;
         top: 5%;   
-        right: 0;
+        right: 10%;
         text-align: end;
         padding: 10px;
         font-size: 1.5rem;
@@ -1626,7 +1626,7 @@ iPad pro vertical///////////////////////////// */
 
     .container .info-IMG1{
         position: absolute;
-        left: 5%;
+        left: 15%;
         bottom: 5%;
     }
     #secondIMG{
@@ -1767,7 +1767,7 @@ iPad pro vertical///////////////////////////// */
         height: 70%;
         overflow: scroll;
         position: absolute;
-        right: 0%;
+        right: 10%;
         top: 25%;
         padding: 15px;
         margin: 12px;

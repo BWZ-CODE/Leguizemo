@@ -2921,10 +2921,9 @@ html {
     .card-post {
         position: absolute;
         top: 80%;
-        left: 25%;
         width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: row ;
         align-items: center;
         justify-content: center;
         height: auto;
@@ -2956,7 +2955,8 @@ html {
 
     .card-post .infoIMG {
         display: flex;
-        justify-content: space-around;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
     }
 
@@ -2980,8 +2980,17 @@ html {
 
 
     }
-
-
+    .infoPostIMG {
+        padding: 20px;
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 5vh;
+        height: auto;
+        padding: 0 0 5% 5%;
+        background-color:unset;
+        border-radius: 15px;
+    }
 
     .card-post .infoIMG .cards-info .row {
         display: flex;
@@ -3000,22 +3009,20 @@ html {
 
     .card-post .infoIMG .cards-info .row .col {
         width: 100%;
-        height: 100px;
+        height: 10vh;
         gap: 20px;
         justify-content: start;
     }
 
     #infoImpactante p {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1rem;
+        font-size: 1.3rem;
         text-align: start;
-        margin-top: 10%;
-        margin-bottom: 5%;
         width: 400px;
     }
 
     #infoImpactante #larga {
-        font-size: 0.8rem;
+        font-size:1.3rem;
     }
 
     /* 
