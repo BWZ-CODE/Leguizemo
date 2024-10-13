@@ -263,13 +263,22 @@ Así se va a ver en celular     ////////////////////////////////////////////////
 Así se va a ver en celular volteado /////////////////////////////////////////////////////////*/
 
 @media (min-width: 577px) {
+
+
+
     header{
         z-index: 20;
         min-height: 20px;
     }
     
 
-   
+    .col-sm-6 {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+        flex: 0 0 auto;
+    }
+
 
     .h1{
         font-size: 0.8em !important;
@@ -296,12 +305,6 @@ Así se va a ver en celular volteado ///////////////////////////////////////////
         
     }
 
-    .col-sm-6{
-        position: relative;
-        width: 100%;
-        margin-top: 10px;
-    }
-
     .figure2{
         position: relative;
        
@@ -311,6 +314,7 @@ Así se va a ver en celular volteado ///////////////////////////////////////////
         width: 100%;
         object-fit:contain;
         position: relative;
+       
         z-index: -1;
     }
     
@@ -322,19 +326,23 @@ Así se va a ver en celular volteado ///////////////////////////////////////////
         background-color: #f5f504;
         width: 90%;
         position:absolute;
-        bottom: 10%;
+        top: 5%;
         right: 0;
-        text-align: end;
+        text-align: start;
         padding: 10px;
-        font-size: 1rem;
+        font-size: 5.5;
     }
 
     .container .info-IMG1{
         position: absolute;
-        left: 10%;
+        left: 5%;
+        bottom: 5%;
+    }
+    #secondIMG{
         bottom: 10%;
     }
-    .container .context-prim{
+
+    .container .context-prim {
         width: 40%;
         max-height: 65vh;
         overflow: scroll;
@@ -345,8 +353,13 @@ Así se va a ver en celular volteado ///////////////////////////////////////////
         border-radius: 5px;
         background-color: rgba(33, 37, 41, 0.75);
     }
+    .container .secondIMG{
+        position: absolute;
+        top: 100%;
+    }
+
     .container .context-prim p{
-        font-size: 1rem
+        font-size: 0.7rem
     }
 
     .parte-final{
@@ -368,7 +381,7 @@ Así se va a ver en celular volteado ///////////////////////////////////////////
     }
     .texto-proposito-info{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1em;
+        font-size: 0.8em;
     }
     /* .cont-Botton{
         width: 100%;
@@ -383,14 +396,17 @@ Así se va a ver en celular volteado ///////////////////////////////////////////
         position: relative;
         background-color: #f5f504;
         border: none;
-        width: 100px;
-        height: 40px;
         
     }
     .btn-primary a{
         color:#000;
         text-decoration: none;
+    }
 
+    .btn-primary a:hover{
+        color: #535308;
+        transition: all 0.2s;
+        background: #f5f504;
     }
     .footer-first{
         position: relative;
@@ -398,7 +414,7 @@ Así se va a ver en celular volteado ///////////////////////////////////////////
         align-items: center;
         justify-content: center;
         margin-top: 10%;
-        min-width: 100%;
+        width: 100%;
         height: 5vh;
         background-color: #f5f504;
     } 
@@ -408,11 +424,78 @@ Así se va a ver en celular volteado ///////////////////////////////////////////
         margin: 0;
     }
 
+    .presentacionPau {
+        position: relative;
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        width: 40%;
+        height: auto;
+        margin: 20px 0 20px 10%;
+        border: none;
+        border-radius: 30px;
+        line-height: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        box-shadow: 0px -16px 10px -4px rgba(0, 0, 0, 0.3), 0px 10px 15px -3px #bdb7b71a;
+        background: rgba(245, 245, 4, 0.334);
+    }
+
+
+    .presentacionPau picture img{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 100%;
+        margin-left: 15px;
+        align-items: center;
+        
+
+    }
+    .presentacionPau .infoPau{
+        padding: 10px 0 0 0;
+    }
+
+    .infoPau ul{
+        list-style: none;
+        padding-left: 10px;
+    }
+    .infoPau ul li:nth-child(1){
+        font-weight: bold;
+    }
+    .infoPau ul a img{
+        width: 15px;
+    }
+
+    .container .figure-señor{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .container .figure-señor p{
+        width: 50%;
+        height: 40vh;
+        overflow: scroll;
+        position: absolute;
+        right: 0;
+        top: 28%;
+        padding: 10px;
+        margin: 12px;
+        border-radius: 5px;
+        background-color: rgba(33, 37, 41, 0.75);
+        font-size: 0.7rem;
+    }
+
+    
+
 } 
 
 /* 
 Así se va a ver en iPad////////////////////////////////////////////////// */
 @media (min-width: 768px) {
+
+
+
     header{
         z-index: 20;
         min-height: 20px;
@@ -422,11 +505,11 @@ Así se va a ver en iPad////////////////////////////////////////////////// */
    
 
     .h1{
-        font-size: 0.8em !important;
+        font-size: 1.4em !important;
     }
 
     .container .contLeft, .contRight {
-        font-size: 2rem;
+        font-size: 1.4em;
     }
     .figure-señor, .p-0{
         position:relative;
@@ -438,18 +521,13 @@ Así se va a ver en iPad////////////////////////////////////////////////// */
 
     .señor-img{
         position: relative;
+        object-fit: contain;
         max-height: 400px;
         width: 100%;
         z-index: -1;
        
         
         
-    }
-
-    .col-sm-6{
-        position: relative;
-        width: 100%;
-        margin-top: 10px;
     }
 
     .figure2{
@@ -461,6 +539,7 @@ Así se va a ver en iPad////////////////////////////////////////////////// */
         width: 100%;
         object-fit:contain;
         position: relative;
+       
         z-index: -1;
     }
     
@@ -470,37 +549,43 @@ Así se va a ver en iPad////////////////////////////////////////////////// */
     }
     .container .figure-señor .tittle-Init{
         background-color: #f5f504;
-        width: 85%;
+        width: auto;
         position:absolute;
-        bottom: 10%;
-        right: 0;
-        text-align: end;
+        top: 5%;
+        right: 8%;
+        text-align: start;
         padding: 10px;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .container .info-IMG1{
         position: absolute;
         left: 10%;
+        bottom: 5%;
+    }
+    #secondIMG{
         bottom: 10%;
     }
+
     .container .context-prim{
         width: 40%;
-        max-height: 35vh;
+        height: 30vh;
         overflow: scroll;
         position: absolute;
+        padding: 10px;
         right: 0;
-        top: 5%;
-        margin: 12px;
+        top: 0;
+        margin: 25px;
         border-radius: 5px;
         background-color: rgba(33, 37, 41, 0.75);
     }
-
-    .container .context-prim h2{
-        font-size: 2.3rem
+    .container .secondIMG{
+        position: absolute;
+        top: 100%;
     }
+
     .container .context-prim p{
-        font-size: 1.3rem
+        font-size: 0.9rem
     }
 
     .parte-final{
@@ -520,38 +605,45 @@ Así se va a ver en iPad////////////////////////////////////////////////// */
         width: 80%;
         
     }
-
-    .texto-proposito-info h2{
-        font-weight: bold;
-        font-size: 3rem;
-    }
-
     .texto-proposito-info{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1.3em;
+        font-size: 0.9em;
     }
+    /* .cont-Botton{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: -20%;
+        display: block;
+    } */
+
 
     .btn-primary{
         position: relative;
         background-color: #f5f504;
         border: none;
-        width: 150px;
-        height: 60px;
+        width: 25%;
+        height: 5vh;
         
     }
     .btn-primary a{
         color:#000;
-        font-size: 1.2rem;
         text-decoration: none;
+        font-size: 1rem;
+    }
 
+    .btn-primary a:hover{
+        color: #535308;
+        transition: all 0.2s;
+        background: #f5f504;
     }
     .footer-first{
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 5%;
-        min-width: 100%;
+        margin-top: 10%;
+        width: 100%;
         height: 5vh;
         background-color: #f5f504;
     } 
@@ -560,36 +652,47 @@ Así se va a ver en iPad////////////////////////////////////////////////// */
         align-self: center;
         margin: 0;
     }
-    .presentacionPau{
+
+    .presentacionPau {
         position: relative;
         display: flex;
-        justify-content: center;
+        justify-content:flex-start;
         align-items: center;
-        width: 65%;
+        width: 35%;
         height: auto;
-        margin: 0 15px 15px 15px;
-        border: 0.1px solid black;
+        margin: 20px 0px 20px 8%;
+        border: none;
         border-radius: 30px;
-        padding: 10px 0 0 0;
         line-height: 20px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        box-shadow: 0px -16px 10px -4px rgba(0,0,0,0.3),0px 10px 15px -3px rgba(0,0,0,0.1);        
+        box-shadow: 0px -16px 10px -4px rgba(0, 0, 0, 0.3), 0px 10px 15px -3px #bdb7b71a;
+        background: rgba(245, 245, 4, 0.334);
     }
+
 
     .presentacionPau picture img{
         width: 50px;
         height: 50px;
         object-fit: cover;
         border-radius: 100%;
+        margin-left: 15px;
         align-items: center;
         
 
     }
+    .presentacionPau .infoPau{
+        padding: 10px 0 0 0;
+    }
+
     .infoPau ul{
         list-style: none;
+        padding-left: 10px;
     }
     .infoPau ul li:nth-child(1){
         font-weight: bold;
+    }
+    .infoPau ul a img{
+        width: 15px;
     }
 
     .container .figure-señor{
@@ -599,17 +702,20 @@ Así se va a ver en iPad////////////////////////////////////////////////// */
 
 
     .container .figure-señor p{
-        width: 40%;
-        height: 18vh;
+        width: 50%;
+        height: 25vh;
         overflow: scroll;
         position: absolute;
-        right: 0;
-        top: 25%;
+        right: 5%;
+        top: 28%;
+        padding: 15px;
         margin: 12px;
         border-radius: 5px;
         background-color: rgba(33, 37, 41, 0.75);
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
+
+    
 
 } 
 
@@ -828,7 +934,7 @@ iPad Air vertical///////////////////////////// */
    
 
     .h1{
-        font-size: 0.8em !important;
+        font-size: 1em !important;
     }
 
     .container .contLeft, .contRight {
@@ -876,20 +982,27 @@ iPad Air vertical///////////////////////////// */
     }
     .container .figure-señor .tittle-Init{
         background-color: #f5f504;
-        width: 85%;
+        width: auto;
         position:absolute;
         bottom: 10%;
         right: 0;
         text-align: end;
         padding: 10px;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        height: 5vh;
+        right: 7%;
     }
 
     .container .info-IMG1{
         position: absolute;
         left: 10%;
-        bottom: 10%;
+        bottom: 1%;
     }
+    #secondIMG {
+        bottom: 10%;
+        left: 5%;
+    }
+
     .container .context-prim{
         width: 40%;
         max-height: 30vh;
@@ -900,6 +1013,7 @@ iPad Air vertical///////////////////////////// */
         margin: 12px;
         border-radius: 5px;
         background-color: rgba(33, 37, 41, 0.75);
+        right: 5%;
     }
 
     .container .context-prim h2{
@@ -971,15 +1085,16 @@ iPad Air vertical///////////////////////////// */
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 65%;
+        width: 35%;
         height: auto;
-        margin: 0 15px 15px 15px;
+        margin: 20px 15px 15px 15px;
         border: 0.1px solid black;
         border-radius: 30px;
         padding: 10px 0 0 0;
         line-height: 20px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        box-shadow: 0px -16px 10px -4px rgba(0,0,0,0.3),0px 10px 15px -3px rgba(0,0,0,0.1);        
+        box-shadow: 0px -16px 10px -4px rgba(0,0,0,0.3),0px 10px 15px -3px rgba(0,0,0,0.1);  
+        left: 9%;      
     }
 
     .presentacionPau picture img{
@@ -1014,7 +1129,8 @@ iPad Air vertical///////////////////////////// */
         margin: 12px;
         border-radius: 5px;
         background-color: rgba(33, 37, 41, 0.75);
-        font-size: 0.7rem;
+        font-size: 1.3rem;
+        right: 10%;
     }
 
 } 
@@ -1283,13 +1399,14 @@ iPad pro vertical///////////////////////////// */
     }
     .container .figure-señor .tittle-Init{
         background-color: #f5f504;
-        width: 85%;
+        width: auto;
         position:absolute;
         bottom: 10%;
-        right: 0;
+        right: 10%;
         text-align: end;
         padding: 10px;
         font-size: 1.5rem;
+        height: 8vh;
     }
 
     .container .info-IMG1{
@@ -1299,7 +1416,8 @@ iPad pro vertical///////////////////////////// */
     }
     .container .context-prim{
         width: 40%;
-        max-height: 30vh;
+        max-height: 45vh;
+        height: 45vh;
         overflow: scroll;
         position: absolute;
         right: 5%;
@@ -1414,16 +1532,23 @@ iPad pro vertical///////////////////////////// */
 
     .container .figure-señor p{
         width: 40%;
-        height: 18vh;
+        height: 40vh;
         overflow: scroll;
         position: absolute;
-        right: 0;
+        right:10%;
         top: 25%;
-        margin: 12px;
         border-radius: 5px;
         background-color: rgba(33, 37, 41, 0.75);
-        font-size: 0.7rem;
+        font-size: 1.2rem;
     }
+    .presentacionPau{
+        width: 30%;
+        gap: 20px;
+        left: 10%;
+        margin-top: 20px;
+        
+    }
+
 
 } 
 
@@ -1489,7 +1614,7 @@ iPad pro vertical///////////////////////////// */
     }
     .container .figure-señor .tittle-Init{
         background-color: #f5f504;
-        
+        width: auto;
         height: 10%;
         position:absolute;
         top: 5%;   
@@ -1501,9 +1626,15 @@ iPad pro vertical///////////////////////////// */
 
     .container .info-IMG1{
         position: absolute;
-        left: 10%;
-        bottom: 10%;
+        left: 5%;
+        bottom: 5%;
     }
+    #secondIMG{
+        position: absolute;
+        bottom: 10%;
+
+    }
+
     .container .context-prim{
         width: 30%;
         max-height: 80%;
